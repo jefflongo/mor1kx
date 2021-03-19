@@ -98,7 +98,8 @@ module mor1kx_lsu_cappuccino
     input 			      supervisor_mode_i,
     output 			      dc_hit_o,
 
-    // interface to data bus
+    // interface to data bus    
+    // TODO: remove
     output [OPTION_OPERAND_WIDTH-1:0] dbus_adr_o,
     output reg			      dbus_req_o,
     output [OPTION_OPERAND_WIDTH-1:0] dbus_dat_o,
@@ -108,6 +109,7 @@ module mor1kx_lsu_cappuccino
     input 			      dbus_err_i,
     input 			      dbus_ack_i,
     input [OPTION_OPERAND_WIDTH-1:0]  dbus_dat_i,
+
     input 			      pipeline_flush_i,
 
     input [31:0] 		      snoop_adr_i,
